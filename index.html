@@ -47,7 +47,6 @@
 								<h1>Secure Software Development</h1>
 							</header>
 							<div class="content">
-								<p>A course about how we can better protect and assess our networks as well as manage particular security concerns.</p>
 							</div>
 						</div>
 					</section>
@@ -59,26 +58,32 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>section xxxx </h2>
+										<h2>System Requirements and Assumptions</h2>
 									</header>
 									<p>
-										<h4>section content </h4>
+										<h4>Non-functional:</h4>
 										<ul>
-										  <li>An understanding of the fundamentals of computer networks and security.</li>
-										  <li>An understanding of the principles of information security management.</li>
-										  <li>An understanding of the use and benefits of various monitoring and logging tools.</li>
-										  <li>An understanding of how to create and use security vulnerability and assessment tools.</li>
-										  <li>An understanding of future network architectures and information security management.</li>
-										  <li>The opportunity to reflect on and evaluate their personal development.</li>
-										  <li>The ability to present critical arguments for specific actions or outcomes to a diverse audience.</li>
+										  <li>Concurancy and bandwidth sharing suitable for a 6 person crew and scientific data collection</li>
+										  <li>Operate within a finite data transmission rate – currently 600 megabits per second (NASA, 2019).</li>
+										  <li>Secure repository data transfer will utilize existing NASA network transmission and security mechansims as mandated by Space Policy Directive 5 (SPD 5)  (National Securty & Defense, 2020).</li>
+											<p>Secure respository application security controls will be limited to:</p>
+										  <li>Confidentiality and integrity of  data stored.</li>
+										  <li>Authentication and authorization of entities accessing the data.</li>
+										  <li>Security controls balancing risk tolerance with system operator burden (National Securty & Defense, 2020).</li>
+										  <li>Data availiability controls will be limited to database backup only, network and hardware availability dependance on services within the ISS.</li>
+											<li>File access will be controlled through group membership or role rather than permission assignment to individual user accounts.</li>
+											<li>Remote administration command line access will be used to support user account and database management.</li>
+											<li>The application must implement security logging and monitoring (OWASP, 2018).</li>
+											<li>The application should utilize a distributed architecture that supports scalability.</li>
 										</ul>
 
-										<h4>On completion of this module you will be able to:</h4>
+										<h4>Functional:</h4>
 										<ol>
-										  <li>Identify and analyse security risks and vulnerabilities in IT network systems and determine appropriate methodologies, tools and techniques to manage and/or solve them.</li>
-										  <li>Design and critically appraise computer programs and systems to produce solutions that help manage and audit risk and security issues.</li>
-										  <li>Gather and synthesise information from multiple sources (including internet security alerts & warning sites) to aid in the systematic analysis of security breaches and issues.</li>
-										  <li>Articulate the legal, social, ethical and professional issues faced by information security professionals.</li>
+											<p> File upload and storage will be limited to the following data types:</p>
+										  <li>Visual graphic files such as PNG, JPEG or SVG</li>
+										  <li>Productivity & communication files such as spreadsheet, pdf or  document.</li>
+										  <li>Archive data file formats such as ZIP, TAR  or RAR.</li>
+										  <li>Binary file formats such as EXE, BIN or firmware.</li>
 										</ol>
 									</p>
 								</div>
