@@ -85,6 +85,19 @@
 										  <li>Archive data file formats such as ZIP, TAR  or RAR.</li>
 										  <li>Binary file formats such as EXE, BIN or firmware.</li>
 										</ul>
+										<h4>Other Functional Requirements:</h4>
+										<ul>
+										  <li>Multi-media files such as AVI, MOV, MP3 or M4A are client CODEC dependant for playback therefore not prioritized for this development phase</li>
+										  <li>HTTP browser interface for authentication, file upload and file download </li>
+										  <li>System user selectable optional encryption at rest for non-binary files.</li>
+										  <li>HTTP server configured with configureable rate limiting mechanism to ensure large file transfer actions do not negatively impact other IIS network operations.</li>
+											<li>Users must be able to view their complete account profile, request corrections and deletion</li>
+											<li>Data must be accessable to remaining group members in the event the original creator account is deleted.</li>
+											<li>Authentication and authorization controls must deny access unless specifically allowed.</li>
+											<li>A minimum of four security groups shall be used for authorizing access to files within the secure repository.</li>
+											<li>Successful and unsuccessful athentication and file access events must be logged by the application</li>
+											<li>Logged events should be frequently replicated to a security event collection and monitoring service such as a centralized server with intrusion detection capabilities.</li>
+										</ul>
 									</p>
 								</div>
 							</section>
